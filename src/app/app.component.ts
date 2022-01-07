@@ -12,7 +12,7 @@ export class AppComponent {
   recipeName: string = '';
   recipeInstructions: string = '';
   recipe_Name: string = '';
-  
+  recipe_Instructions: string = '';
 
   onClick() {
     this.show = !this.show;
@@ -22,6 +22,8 @@ export class AppComponent {
     console.log(this.recipeName);
     console.log(this.recipeInstructions);
     this.recipe_Name = this.recipeName;
+    this. recipe_Instructions = this.recipeInstructions;
+    
     
   }
 }

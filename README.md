@@ -1,4 +1,4 @@
-# Pre-Assessment Angular Starter
+# Pre-Assessment Angular Starter - Omar Abbas
 
 ## Usage
 After cloning this repo, you'll need to install the dependencies: `npm install`

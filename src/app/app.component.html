@@ -2,6 +2,20 @@
   <h1 class="doNotRemoveMe">Hello world.</h1>
   <!-- ^ Do not remove this element ^ -->
   <h1>My Recipes</h1>
-  <p> There are no recipes to list</p>
+
+  <li [hidden]="!show"> {{recipe_Name}}</li> 
+  
+ 
+  <button type="button" (click) = onClick() [hidden]="show" >Add Recipe</button>
+  
+  <form #recipeForm="ngForm" [hidden]="!show" (ngSubmit)= "addRecipe()">
+    recipe-name <input name="recipe-name" type="text" [(ngModel)]="recipeName">
+    recipe-instructions <input name="recipe-instructions" type="text" [(ngModel)]="recipeInstructions">
+    <button type="submit" >submit</button>
+ </form>  
+  
+ <p [hidden]="show"> There are no recipes to list</p>
+
+
 </div>
  

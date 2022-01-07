@@ -9,8 +9,10 @@
   <button type="button" (click) = onClick() [hidden]="show" >Add Recipe</button>
   
   <form #recipeForm="ngForm" [hidden]="!show" (ngSubmit)= "addRecipe()">
-    recipe-name <input role="textbox" name="recipe-name" type="text" [(ngModel)]="recipeName">
-    recipe-instructions <input role="textbox" name="recipe-instructions" type="text" [(ngModel)]="recipeInstructions">
+    <label for="recipe-name">recipe-name</label>
+    <input type="text" name="recipe-name" [(ngModel)]="recipeName">
+    <label for="recipe-instructions">recipe-instructions</label>
+    <input role="textbox" name="recipe-instructions" type="text" [(ngModel)]="recipeInstructions">
     <button type="submit" >submit</button>
  </form>  
   

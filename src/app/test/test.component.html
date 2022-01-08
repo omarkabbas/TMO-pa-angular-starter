@@ -9,9 +9,9 @@
 
 <form #recipeForm="ngForm" [hidden]="!show" (ngSubmit)= "onClickSubmit(recipeForm.value)">
   <label for="recipe-name">recipe-name</label>
-  <input type="text" name="recipeName" ngModel >
+  <input #recipeName type="text" name="recipe-name" ngModel >
   <label for="recipe-instructions">recipe-instructions</label>
-  <input type="text" name="recipeInstructions" ngModel>
+  <input type="text" name="recipe-instructions" ngModel>
   <button type="submit">Submit</button>
 </form>  
 

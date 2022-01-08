@@ -8,10 +8,10 @@
 <button type="button" (click) = onClick() [hidden]="show" >Add Recipe</button>
 
 <form #recipeForm="ngForm" [hidden]="!show" (ngSubmit)= "onClickSubmit(recipeForm.value)">
-  <label for="recipe-name">recipe-name</label>
-  <input #recipeName type="text" name="recipe-name" >
-  <label for="recipe-instructions">recipe-instructions</label>
-  <input type="text" name="recipe-instructions">
+  <label aria-label='recipe-name' for="recipe-name">recipe-name</label>
+  <input #recipeName aria-label='recipe-name' type="text" name="recipe-name" >
+  <label aria-label='recipe-instructions' for="recipe-instructions">recipe-instructions</label>
+  <input aria-label='recipe-instructions'type="text" name="recipe-instructions">
   <button type="submit">Submit</button>
 </form>  
 

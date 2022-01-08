@@ -1,0 +1,19 @@
+<div>
+<h1>My Recipes</h1>
+<p [hidden]="show"> There are no recipes to list</p>
+<ul>
+  <li [hidden]="!show"> {{recipe_Name}}</li> 
+</ul>
+
+<button type="button" (click) = onClick() [hidden]="show" >Add Recipe</button>
+
+<form #recipeForm="ngForm" [hidden]="!show" (ngSubmit)= "onClickSubmit(recipeForm.value)">
+  <label for="recipe-name">recipe-name</label>
+  <input type="text" name="recipeName" ngModel >
+  <label for="recipe-instructions">recipe-instructions</label>
+  <input type="text" name="recipeInstructions" ngModel>
+  <button type="submit">Submit</button>
+</form>  
+
+
+</div>

@@ -11,9 +11,9 @@
   
   <form #recipeForm="ngForm" [hidden]="!show" (ngSubmit)= "addRecipe()">
     <label for="recipe-name">recipe-name</label>
-    <input type="text" [(ngModel)]="recipeName" name="recipeName" label="recipe-name" >
+    <input aria-label= "recipe-name" type="text" [(ngModel)]="recipeName" name="recipeName" label="recipe-name" >
     <label for="recipe-instructions">recipe-instructions</label>
-    <input type="text"  [(ngModel)]="recipeInstructions" name="recipeInstructions" label="recipe-instructions">
+    <input aria-label= "recipe-instructions" type="text"  [(ngModel)]="recipeInstructions" name="recipeInstructions" label="recipe-instructions">
     <button type="submit" >submit</button>
  </form>  
   
